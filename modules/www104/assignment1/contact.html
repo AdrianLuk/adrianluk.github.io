@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contact Us - League of Heroes</title>
+        <meta name="description" content="You can contact us at: 1234 Go-gooders Way
+Toronto, Ontario
+M2J 1P3
+Tel: (416) 555-3060
+Fax: (416) 555-2541
+Email: info@leagueofheroes.com
+Monday to Friday
+Between 9:00 AM to noon or 1:00 PM to 5:00PM
+">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="author" content="Adrian Luk">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="page-header">
+                <h1>League of Heroes</h1>
+            </div>
+            <!-- ./page-header -->
+        </header>
+
+        <!-- ================================================ navbars =====================================================-->
+
+
+
+        <nav class="navbar-inverse navbar-fixed-bottom" id="bottomNav">
+            <div class="col-xs-3"><a class="bottom" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> HOME</a>
+            </div>
+            <div class="col-xs-3"><a class="bottom" href="history.html"><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> History</a>
+            </div>
+            <div class="col-xs-3"><a class="bottom" href="team.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Team</a>
+            </div>
+            <div class="col-xs-3 active"><a class="bottom" href="contact.html"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact</a></div>
+        </nav>
+
+
+
+        <nav id="topNav">
+            <ul>
+                <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                <li><a href="history.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About the League</a>
+                    <ul>
+                        <li><a href="history.html">Our History</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- topNav -->
+
+        <!--==================================================== end navbars============================================== -->
+        <h2>Need saving? Fill out the form below to send us a message!</h2>
+        <div class="container-fluid myform">
+            <form id="contact-form" class="form" method="post">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                        <div class="input-group input-group-lg">
+                            <label for="prefix" class="input-group-addon">PREFIX</label>
+                            <select class="form-control" id="prefix" aria-describedby="prefix">
+                              <option>Mr.</option>
+                              <option>Ms.</option>
+                              <option>Mrs.</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-5 col-lg-5">
+                        <div class="input-group input-group-lg">
+                            <label for="firstname" class="input-group-addon">FIRST NAME</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name" aria-describedby="firstname">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                        <div class="input-group input-group-lg">
+                            <label for="lastname" class="input-group-addon">LAST NAME</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name" aria-describedby="lastname">
+                        </div>
+                    </div>
+                </div>
+                <!-- ./row -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="input-group input-group-lg">
+                            <label for="email" class="input-group-addon">EMAIL</label>
+                            <input type="email" class="form-control" id="email" placeholder="need.saving@myemail.com" aria-describedby="email">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="input-group input-group-lg">
+                            <label for="phone" class="input-group-addon">PHONE</label>
+                            <input type="text" class="form-control" id="phone" placeholder="(123) 456-7890" aria-describedby="phone">
+                        </div>
+                    </div>
+                </div>
+                <!-- ./row -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <div class="input-group input-group-lg">
+                            <label for="address" class="input-group-addon">ADDRESS</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Please Save Me Avenue" aria-describedby="address"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="input-group input-group-lg">
+                            <label for="city" class="input-group-addon">CITY</label>
+                            <input type="text" class="form-control" id="city" placeholder="Toronto" aria-describedby="city"></div>
+                    </div>
+                </div>
+                <!-- ./row -->
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <div class="input-group input-group-lg"><label for="province" class="input-group-addon">PROVINCE/STATE</label><input type="text" class="form-control" id="province" placeholder="Ontario" aria-describedby="province"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="input-group input-group-lg"><label for="postal" class="input-group-addon">POSTAL CODE</label><input type="text" class="form-control" id="postal" placeholder="M2J 2X5" aria-describedby="postal"></div>
+                    </div>
+                </div>
+                <!-- ./row -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="input-group input-group-lg">
+                            <label for="subject" class="input-group-addon">SUBJECT</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Please save me from the Scary Baddie!" aria-describedby="subject"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group input-group-lg">
+                            <label for="message" id="message-label" class="input-group-addon">MESSAGE:</label>
+                            <textarea class="form-control" rows="5" id="message" placeholder="Hey League of Heroes! I'm a huge fan of your brightly colored spandex. I think that would help me chase away the scary baddie. Could you send me some brightly colored spandex?" aria-describedby="message"></textarea>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="btn btn-default pull-right"><span class="glyphicon glyphicon-send"></span>&nbsp;Send Message</button>
+
+                <div class="clearfix"></div>
+            </form>
+            <!-- ./form -->
+        </div>
+        <!-- ./container-fluid -->
+        <div class="container-fluid">
+            <div class="row" id="driving-contact">
+                <div class="col-xs-12 col-sm-6 col-md-7 col-lg-9">
+                    <h4>Driving Directions</h4>
+                    <ol>
+                        <li>If you are driving on the Queen Elizabeth Way (QEW), follow the Gardiner Expressway to Spadina Avenue.</li>
+                        <li>Proceed north on Spadina Avenue to Bloor Street W. and then turn right (east). Proceed east on Bloor until you reach Avenue Road/Queen's Park.</li>
+                        <li>The Laboratory is on the southwest corner of Bloor Street W. and Queen's Park.</li>
+                    </ol>
+                    <p>From Highway 401, take Avenue Road south to Bloor Street W. or take the Don Valley Parkway south to the Bloor Street W. ramp and proceed west along Bloor Street to Avenue Road/Queen's Park.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-3">
+                    <h4>Contact Info</h4>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> 1234 Go-gooders Way<br> Toronto, Ontario<br> M2J 1P3</p>
+                    <p><span class="glyphicon glyphicon-phone-alt"></span> Tel: (416) 555-3060<br> Fax: (416) 555-2541</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> Email:<br>
+                        <a href="mailto:info@madscilabs.com" class="">info@leagueofheroes.com</a></p>
+                    <p><span class="glyphicon glyphicon-time"></span> Monday to Friday<br> Between 9:00 AM to noon or 1:00 PM to 5:00PM</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <address>1234 Go-gooders Way<br>Toronto, Ontario<br>M2J 1P3<br></address><address>Tel: (416) 555-3060<br>Fax: (416) 555-2541<br>
+        Email: <a href="mailto:info@leagueofheroes.com"> info@leagueofheroes.com</a></address>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

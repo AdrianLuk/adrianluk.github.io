@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home - League of Heroes</title>
+        <meta name="description" content="The League of Heroes is a collection of some of Earth’s mightiest costumed super-heroes! We’ve decided to use our powers for the forces of good to fight evil in all its forms.">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="author" content="Adrian Luk">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="animated slideOutLeft" id="homescreen" onclick="wipe()">
+            <h1 class="animated zoomIn">League Of Heroes</h1>
+
+            <p class="animated zoomIn">The World's Leading Crime Fighting Organization</p>
+            <p class="animated fadeIn">(Click anywhere to skip)</p>
+        </div>
+        <!-- ./slideouthomescreen -->
+        <header>
+            <div class="page-header">
+                <h1>League of Heroes</h1>
+            </div>
+            <!-- ./page-header -->
+        </header>
+
+        <!-- ================================================ navbars =====================================================-->
+
+
+        <nav class="navbar-inverse navbar-fixed-bottom" id="bottomNav">
+            <div class="col-xs-3 active"><a class="bottom" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> HOME</a></div>
+
+            <div class="col-xs-3"><a class="bottom" href="history.html"><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> History</a>
+            </div>
+            <div class="col-xs-3"><a class="bottom" href="team.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Team</a>
+            </div>
+            <div class="col-xs-3"><a class="bottom" href="contact.html"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact</a></div>
+        </nav>
+
+
+
+        <nav id="topNav">
+            <ul>
+                <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                <li><a href="history.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About the League</a>
+                    <ul>
+                        <li><a href="history.html">Our History</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- topNav -->
+
+        <!--==================================================== end navbars============================================== -->
+
+        <div class="container-fluid">
+            <article class="whoare">
+                <h2>Who are we?</h2>
+                <p>The League of Heroes is a collection of some of Earth’s mightiest costumed super-heroes! We’ve decided to use our powers for the forces of good to fight evil in all its forms. We believe in changing the world, and we believe the best way
+                    to do that is in spandex and a cape! The League is the world's most powerful collection of crime fighters.</p>
+            </article>
+        </div>
+        <!-- ./container-fluid -->
+
+        <div class="container-fluid" id="mylightbox">
+            <h3>Check out some action shots below of us beating up some baddies!</h3>
+            <div class="row">
+                <div class="column col-xs-3">
+                    <img src="img/eyelaserscropped1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Triclops with eye lasers taking out a baddie">
+                </div>
+                <div class="column col-xs-3">
+                    <img src="img/battlecropped.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Hero pummeling a baddie into some rocks">
+                </div>
+                <div class="column col-xs-3">
+                    <img src="img/herobattlecropped.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="Hero knocking out a baddie">
+                </div>
+                <div class="column col-xs-3">
+                    <img src="img/heroinecropped.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="Female hero taking out a green baddie">
+                </div>
+            </div>
+            <!-- ./row -->
+            <div class="row">
+                <div class="column col-xs-3">
+                    <img src="img/heroinepunchcropped.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="Female hero punching a male baddie in the mouth">
+                </div>
+                <div class="column col-xs-3">
+                    <img src="img/saviorcropped.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="One of our heroes rescuing a woman from a fire">
+                </div>
+                <div class="column col-xs-3">
+                    <img src="img/globeliftcropped.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="A female hero lifting up the planet">
+                </div>
+                <div class="column col-xs-3">
+                    <img src="img/heromonstercropped.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="An epic battle between one of our heroes and a monster baddie">
+                </div>
+            </div>
+            <!-- ./row -->
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="img/eyelaserscropped1.jpg" alt="Triclops with eye lasers taking out a baddie">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="img/battlecropped.jpg" alt="Hero pummeling a baddie into some rocks">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="img/herobattlecropped.jpg" alt="Hero knocking out a baddie">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="img/heroinecropped.jpg" alt="Female hero taking out a green baddie">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="img/heroinepunchcropped.jpg" alt="Female hero punching a male baddie in the mouth">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="img/saviorcropped.jpg" alt="One of our heroes rescuing a woman from a fire">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="img/globeliftcropped.jpg" alt="A female hero lifting up the planet">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="img/heromonstercropped.jpg" alt="An epic battle between one of our heroes and a monster baddie">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column col-xs-3">
+                            <img class="demo cursor" src="img/eyelaserscropped1.jpg" onclick="currentSlide(1)" alt="Triclops with eye lasers taking out a baddie">
+                        </div>
+                        <div class="column col-xs-3">
+                            <img class="demo cursor" src="img/battlecropped.jpg" onclick="currentSlide(2)" alt="Hero pummeling a baddie into some rocks">
+                        </div>
+                        <div class="column col-xs-3">
+                            <img class="demo cursor" src="img/herobattlecropped.jpg" onclick="currentSlide(3)" alt="Hero knocking out a baddie">
+                        </div>
+                        <div class="column col-xs-3">
+                            <img class="demo cursor" src="img/heroinecropped.jpg" onclick="currentSlide(4)" alt="Female hero taking out a green baddie">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column col-xs-3">
+                            <img class="demo cursor" src="img/heroinepunchcropped.jpg" onclick="currentSlide(5)" alt="Female hero punching a male baddie in the mouth">
+                        </div>
+                        <div class="column col-xs-3">
+                            <img class="demo cursor" src="img/saviorcropped.jpg" onclick="currentSlide(6)" alt="One of our heroes rescuing a woman from a fire">
+                        </div>
+                        <div class="column col-xs-3">
+                            <img class="demo cursor" src="img/globeliftcropped.jpg" onclick="currentSlide(7)" alt="A female hero lifting up the planet">
+                        </div>
+                        <div class="column col-xs-3">
+                            <img class="demo cursor" src="img/heromonstercropped.jpg" onclick="currentSlide(8)" alt="An epic battle between one of our heroes and a monster baddie">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./mymodal -->
+        </div>
+        <!-- ./mylightbox -->
+
+        <footer>
+            <address>1234 Go-gooders Way<br>Toronto, Ontario<br>M2J 1P3<br></address><address>Tel: (416) 555-3060<br>Fax: (416) 555-2541<br>
+Email: <a href="mailto:info@leagueofheroes.com"> info@leagueofheroes.com</a></address>
+        </footer>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
+<!-- clouds - http://www.istockphoto.com/ca/photo/blue-sky-and-white-cloud-gm488429206-74126727 -->
+<!-- http://www.istockphoto.com/ca/vector/superhero-fighting-monster-with-heat-vision-gm648329898-117711867
+
+http://www.istockphoto.com/ca/vector/super-battle-gm452168661-25544794
+
+http://www.istockphoto.com/ca/vector/superhero-clobber-gm164540461-9131762
+
+http://www.istockphoto.com/ca/vector/superheroine-battle-gm164300655-8095215
+
+http://www.istockphoto.com/ca/vector/super-fight-gm120544620-16027749
+
+http://www.istockphoto.com/ca/vector/savior-gm520175150-90881637
+
+http://www.istockphoto.com/ca/vector/superhero-woman-lifts-a-globe-gm533992326-94656905
+
+http://www.istockphoto.com/ca/vector/vector-supeheroes-vs-monster-silhouette-gm491659704-75867539 -->

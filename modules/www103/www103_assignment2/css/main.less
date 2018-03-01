@@ -1,0 +1,273 @@
+out: main.css
+@font: 'Roboto', Helvetica, Arial, sans-serif;
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    position: relative;
+
+    padding: 0;
+}
+
+.container-fluid
+{
+    height: 80px;
+    padding: 0;
+}
+
+.container
+{
+    width: 100%;
+}
+
+.row
+{
+    border-top: 1px solid black;  border-bottom: 1px solid black;
+}
+
+.navbar
+{
+    margin: 0;
+
+    border: none;border-radius: 0;
+}
+.nav.navbar-nav > li > a
+{
+    font-family: @font;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 80px;
+
+    padding: 0 30px;
+
+    color: #06f;
+    &:hover
+    {
+        color: #fff;
+        background: #157de5;
+    }
+}
+.nav.navbar-nav > .active > a
+{
+    color: white;  background-color: #157de5;
+}
+
+#logo
+{
+    padding: 2px 0;
+}
+
+#splash
+{
+    position: relative;  height: 970px; margin: 0;
+    padding: 0 10px;
+
+    border-bottom: 1px solid black;background: url(../img/computerondeskblue.jpg) center;
+    h1
+    {
+        font-size: 3.5em;
+        font-weight: bold;
+
+        position: absolute;
+        top: 20%;
+        left: 7%;
+
+        color: #fff;
+    }
+    .contact-info
+    {
+        font-weight: bold;
+
+        position: absolute;
+        top: 20%;
+        right: 15%;
+
+        padding: 30px;
+
+        opacity: .8;
+        border-radius: 10px;
+        background: #8b8c8d;
+        h2
+        {
+            font-size: 3em;
+            font-weight: bold;
+
+            margin-top: 0;
+
+            color: #000;
+        }
+        h3
+        {
+            font-size: 2.5em;
+            font-weight: bold;
+
+            color: #f7ba44;
+        }
+        p
+        {
+            font-size: 2em;
+            font-weight: 600;
+
+            color: #000;
+            a
+            {
+                color: #02005e;
+            }
+        }
+    }
+}
+
+.section-header
+{
+    font-size: 5em;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: #157de5;
+}
+
+#about
+{
+    display: flex;  flex-direction: row;  justify-content: flex-start;
+
+    padding: 0 10px;
+    article
+    {
+        padding: 20px;  background: #c9c9c9;
+        p
+        {
+            font-size: 1.3em;
+
+            width: 80%;
+            margin: 40px auto auto auto;
+        }
+    }
+}
+#servicessection
+{
+    height: 100%;  padding: 20px;  background: #c9c9c9;
+    p
+    {
+        font-size: 1.3em;
+    }
+}
+
+.col-xs-4
+{
+    padding: 2%;
+}
+#services
+{
+    padding: 0 10px;
+
+    img
+    {
+        height: 150px;  margin: auto;
+    }
+    p
+    {
+        font-size: 1.3em;  margin: 40px auto auto auto;
+    }
+}
+
+.testimonialtext
+{
+    display: flex;  flex-direction: row;  justify-content: space-around;
+
+    padding: 20px;  text-align: center;
+    article
+    {
+        margin: 0 10px;  padding: 20px;  background: #c9c9c9;
+    }
+    p
+    {
+        font-size: 1.3em;  text-align: left;
+    }
+}
+
+.customername
+{
+    font-size: 2em;  font-weight: bold;
+}
+
+#contact-container
+{
+    padding: 20px;
+}
+
+
+.bottom-contact
+{
+    font-weight: bold;
+
+    width: 20%;  margin: 0 100px;  padding: 30px;     border-radius: 10px;  background: #8b8c8d;
+    article
+    {
+        padding: 10px;
+    }
+    h3
+    {
+        font-size: 3em;  font-weight: bold;
+    }
+    p
+    {
+        font-size: 1.5em;
+        a
+        {
+            font-size: 1.2em;  color: #304ad4;
+        }
+    }
+}
+
+.bottom-form
+{
+    font-size: 1.3em;  font-weight: bold;  font-weight: bold;  width: 70%;  margin: auto 100px;  padding: 0 30px;  border-radius: 10px;  background: #8b8c8d;
+
+    h2
+    {
+        font-size: 2.5em;  font-weight: bold;
+    }
+}
+
+#contact
+{
+    display: flex;  flex-direction: row;  justify-content: space-around;
+
+    padding: 30px;  border: none;
+}
+
+textarea
+{
+    resize: vertical;
+}
+
+footer
+{
+    position: relative;  display: flex;  flex-direction: row;  justify-content: center;     padding: 10px;  color: #fff;  background: #09498a;
+    div
+    {
+        margin: 0 20px;  padding: 20px;
+    }
+    p
+    {
+        font-size: 1.5em;
+        a
+        {
+            color: #829af1;
+            &:hover
+            {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.copyright
+{
+    position: absolute;  bottom: 0;  left: 0;  padding: 10px;
+}

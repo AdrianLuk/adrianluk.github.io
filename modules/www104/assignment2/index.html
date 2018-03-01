@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Number Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">Adrian's Amazing Number Picker Game</h1>
+    </div>
+    <div class="wrapper">
+        <div class="col-xs-12 col-lg-6">
+            <h2 class="text-center">Which Number is Bigger?</h2>
+            <h3 class="text-center">Instructions:</h3>
+            <p class="text-center">Use the left and right arrow keys to pick the larger of the two numbers</p>
+            <canvas id="canvas" width="720" height="400"></canvas>
+        </div>
+        <div class="col-xs-12 col-lg-6">
+            <h2 class="text-center">Correct Answers vs Incorrect Answers</h2>
+            <p class="text-center"> Correct: <span id="correct"></span><br> Wrong: <span id="incorrect"></span></p>
+            <canvas id="piechart" width="720" height="400"></canvas>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

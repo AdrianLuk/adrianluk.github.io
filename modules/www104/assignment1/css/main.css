@@ -1,0 +1,503 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', Helvetica, Arial, Sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: #2290cd;
+}
+#homescreen {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+#homescreen.animated.slideOutLeft {
+  animation-duration: 2s;
+  animation-delay: 5s;
+}
+#homescreen.animated.slideOutLeft img {
+  margin: auto;
+}
+h1.animated.zoomIn {
+  font-family: 'Bangers', cursive;
+  font-size: 6em;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  margin-left: -50%;
+  padding: 30px;
+  animation-duration: 2s;
+  text-align: center;
+  letter-spacing: 5px;
+  color: white;
+}
+p.animated.zoomIn {
+  font-size: 2em;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  margin-left: -50%;
+  padding: 50px;
+  animation-duration: 2s;
+  text-align: center;
+  color: white;
+}
+p.animated.fadeIn {
+  font-size: 1em;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  margin-left: -50%;
+  padding: 50px;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  text-align: center;
+  color: white;
+}
+div.page-header {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-bottom: 0;
+  background: url('../img/clouds.png') no-repeat;
+  background-size: cover;
+}
+div.page-header h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 8em;
+  margin-top: 0;
+  padding: 30px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: white;
+}
+.active {
+  background: #ccc;
+}
+.navbar-fixed-bottom {
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  overflow: hidden;
+  height: 50px;
+  text-align: center;
+}
+.bottom {
+  font-size: 1.2em;
+  line-height: 50px;
+  padding: 10px;
+  color: white;
+}
+#topNav {
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+  position: fixed !important;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  text-align: center;
+  letter-spacing: 3px;
+  background: linear-gradient(#55acca, #1f8ecd);
+  box-shadow: 2px 2px 1px #333;
+}
+#topNav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+#topNav a:hover {
+  color: #1f8ecd;
+  background-color: white;
+}
+#topNav ul > li:hover > ul {
+  display: block;
+}
+#topNav ul > li ul > li:hover > a {
+  color: black;
+}
+#topNav ul > li:hover > ul > li a {
+  background: linear-gradient(#55acca, #1f8ecd);
+}
+#topNav > ul > li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+#topNav ul > li > a {
+  font-weight: bold;
+  padding: 25px 20px 20px;
+  color: white;
+  border-radius: 8px;
+}
+#topNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+#topNav > ul {
+  width: 80%;
+  margin: auto;
+}
+#topNav ul > li > ul {
+  position: absolute;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+#topNav ul ul > li > a {
+  font-weight: bold;
+  margin: 5px auto;
+  padding: 20px;
+  color: white;
+  box-shadow: 2px 2px 1px #333;
+}
+#topNav ul ul {
+  display: none;
+  /*change to either none or block to toggle subnav visibility*/
+}
+h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 5em;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.whoare p {
+  font-size: 1.8em;
+  font-weight: bold;
+  font-style: italic;
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  text-indent: 50px;
+  color: white;
+}
+/*========================= LIGHTBOX =====================*/
+#mylightbox {
+  width: 80%;
+  margin: auto;
+}
+#mylightbox h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 2.5em;
+  padding: 0 20px 5px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+}
+.row {
+  float: left;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.row > .column {
+  padding: 0 8px;
+}
+.row:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.column {
+  width: 25%;
+}
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background-color: black;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  background-color: black;
+}
+/* The Close Button */
+.close {
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+}
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  text-decoration: none;
+  color: #999;
+}
+.mySlides {
+  display: none;
+  width: 100%;
+}
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -50px;
+  padding: 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: .6s ease;
+  color: white;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  padding: 15px;
+  color: #f2f2f2;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.caption-container {
+  padding: 2px 16px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+#caption {
+  font-size: 2em;
+  margin: 10px 0;
+}
+.demo {
+  opacity: .6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+img.hover-shadow {
+  width: 100%;
+  transition: .3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0 0;
+  padding: 10px 0;
+  background: #333;
+}
+footer address {
+  font-family: 'Roboto', Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  margin: 0 10px;
+  padding: 0 20px;
+  color: white;
+}
+.aboutheader {
+  font-family: 'Bangers', cursive;
+  font-size: 3.2em;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+.aboutinfo.text-center.col-xs-12.col-md-4 h4 {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 10px;
+}
+.aboutinfo.text-center.col-xs-12.col-md-4 h5 {
+  font-size: 2em;
+}
+.aboutinfo.text-center.col-xs-12.col-md-4 p {
+  font-size: 1.5em;
+  padding: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+.form-control:focus {
+  border: 1px solid #000080;
+  box-shadow: 0 0 15px #008;
+}
+#contact-form {
+  padding: 0;
+}
+.input-group {
+  margin: 10px;
+}
+.input-group-lg > .form-control {
+  height: auto;
+}
+.input-group-addon {
+  font-weight: bold;
+  color: #111;
+  border: 1px solid #4aa6db;
+  background: #4aa6db;
+  box-shadow: 1px 1px 1px #333;
+}
+.container-fluid {
+  width: 90%;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+.btn {
+  font-size: 1.3em;
+  margin: 20px;
+  padding: 20px;
+}
+#message-label {
+  font-size: 1.75em;
+}
+.form-group {
+  margin: 20px;
+}
+.form-group textarea {
+  width: 100%;
+  resize: vertical;
+}
+#driving-contact {
+  width: 100%;
+  margin: auto;
+  padding: 50px;
+}
+#driving-contact h4 {
+  font-family: 'Bangers', cursive;
+  font-size: 3.5em;
+  padding: 20px;
+  letter-spacing: 3px;
+}
+#driving-contact li {
+  font-size: 2em;
+}
+#driving-contact p {
+  font-size: 2em;
+}
+#driving-contact p a {
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
+/*target a screen from 0px to 480px*/
+@media screen and (max-width: 480px) {
+  #topNav {
+    display: none;
+  }
+  body {
+    padding-bottom: 50px;
+  }
+  h1.animated.zoomIn {
+    font-size: 4em;
+    top: 15%;
+  }
+  p.animated.zoomIn {
+    font-size: 1.5em;
+    top: 50%;
+  }
+  #mylightbox {
+    display: none;
+  }
+  div.page-header h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  .whoare p {
+    font-size: 1.2em;
+    width: 90%;
+    padding: 20px;
+  }
+  #driving-contact.row {
+    padding: 20px;
+  }
+  #driving-contact.row h4 {
+    font-size: 2.5em;
+  }
+  #driving-contact.row li {
+    font-size: 1.5em;
+  }
+  #driving-contact.row a {
+    font-size: .75em;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #topNav {
+    display: none;
+  }
+  body {
+    padding-bottom: 50px;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  .aboutinfo.text-center.col-xs-12.col-md-4 p {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #topNav {
+    display: none;
+  }
+  body {
+    padding-bottom: 50px;
+  }
+  .aboutinfo.text-center.col-xs-12.col-md-4 p {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 993px) {
+  #bottomNav {
+    display: none;
+  }
+  body {
+    padding-top: 85px;
+  }
+}

@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+body{
+	font-family: Georgia, sans-serif;
+	text-align: center;
+	margin: auto;
+	max-width: 2000px;
+	width: 1850px;
+	
+}
+
+.slogan{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 34px;
+	font-style:italic;
+	color: darkgrey;
+}
+
+h1{
+	font-family: comic sans ms, Arial, Sans-serif;
+	font-size: 4em;
+	background: linear-gradient(to right, red, orange, yellow, blue, green, purple);
+	padding: 20px;
+	border-radius: 50px;
+	
+}
+
+nav{
+	
+	margin: 30px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 34px;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+	padding: 30px; 
+	background-color: lightblue;
+	margin: auto 50px;
+	border-radius: 50px;
+	font-weight: bold;
+	
+}
+
+nav a{
+	text-decoration: none;
+	margin: 50px;
+	color: blue;
+}
+
+nav a:hover{
+	color: white;
+	opacity: 0.5;
+}
+
+#quicknav{
+	
+	font-size: 32px;
+	border-radius: 50px;
+}
+
+#quicknav ul{
+	
+	list-style: none;
+	padding: 0;
+}
+
+#quicknav li{
+	background-color: lightblue;
+	display: inline-block;
+	font-weight: bold;
+	border-radius: 50px;
+	margin: auto 20px;
+	padding: 20px;
+}
+
+#quicknav a{
+	text-decoration: none;
+	margin: 50px;
+	color: blue;
+}
+
+#quicknav a:hover{
+	color: white;
+	opacity: 0.5;
+}
+
+h2{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 42px;
+	padding: 20px 0 0 0;
+	margin-bottom: 0;
+}
+h3{
+	font-family: Verdana, Arial, Sans-serif;
+	margin: 0px auto auto auto;
+	font-size: 36px;
+	font-weight: bold;
+}
+.red{
+	
+	background-color: red;
+}
+
+.orange{
+	background-color: orange;
+}
+
+.yellow{
+	background-color: yellow;
+}
+.warm article{
+	width: 30%;
+	margin: 10px;
+	padding: 20px 20px 40px 20px;
+	height: 350px;
+	max-height: 25%;
+	float: left;
+	border-radius: 50px;
+	max-width: 30%;
+}
+
+.warm p{
+	position: relative;
+	bottom: auto;
+	text-align: center;
+	font-size: 24px;
+	background-color: white;
+	border-radius: 50px;
+	padding: 15px 10px;
+	font-family: georgia, serif;
+}
+.clearfix{
+	clear: both;
+}
+#warmcolors{
+	background: linear-gradient(to right, red, orange, yellow);
+	border-radius: 50px;
+	margin: 20px auto 100px auto;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.green{
+	background-color: green;
+}
+
+.purple{
+	background-color: purple;
+}
+
+.cool article{
+	width: 30%;
+	margin: 10px;
+	padding: 20px 20px 40px 20px;
+	height: 350px;
+	max-height: 25%;
+	float: left;
+	border-radius: 50px;
+	max-width: 30%;
+}
+
+.cool p{
+	position: relative;
+	bottom: auto;
+	text-align: center;
+	font-size: 24px;
+	background-color: white;
+	border-radius: 50px;
+	padding: 15px 10px;
+	font-family: georgia, serif;
+}
+
+.clearfix{
+	clear: both;
+}
+
+#coolcolors{
+	background: linear-gradient(to right, blue, green, purple);
+	border-radius: 50px;
+	margin: 100px auto;
+}
+
+
+
+.black{
+	background-color: black;
+}
+
+.black h3{
+	color: white;
+	
+}
+
+.grey{
+	background-color: grey;
+}
+
+.white{
+	background-color: white;
+}
+
+.neutral article{
+	width: 30%;
+	margin: 10px;
+	padding: 20px 20px 40px 20px;
+	height: 350px;
+	max-height: 25%;
+	float: left;
+	border-radius: 50px;
+	max-width: 30%;
+}
+
+.neutral p{
+	position: relative;
+	bottom: auto;
+	text-align: center;
+	font-size: 24px;
+	background-color: white;
+	border-radius: 50px;
+	padding: 15px 10px;
+	font-family: georgia;
+}
+
+.clearfix{
+	clear: both;
+}
+
+#neutralcolors{
+	background: linear-gradient(to right, black, grey, white);
+	border: 1px solid black;
+	border-radius: 50px;
+	margin: 100px auto;
+	
+}
+
+#neutralcolors h2{
+	margin-top: 0;
+}
+
+
+
+footer p{
+	margin: auto;
+	float: left;
+	
+
+}
+address{
+	clear: both;
+	text-align: center;
+	padding-top: 0px;
+	position: relative;
+	top: 20px;
+}

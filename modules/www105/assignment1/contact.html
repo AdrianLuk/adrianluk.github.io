@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>RadicalPhoto Contact</title>
+	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
+</head>
+
+<body>
+
+	<div id="header">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a>
+		</ul>
+
+		<h1>RadicalPhoto</h1>
+
+	</div>
+
+	<div id="main_wrapper">
+
+		<div id="content">
+			<h2>Contact RadicalPhoto</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+			<form id="myform" action="http://derekallard.com/echo.php" method="post">
+
+				<p class="errors">All fields are required.</p>
+
+				<p><label for="username">Name: <input type="text" size="25" name="name" id="username" ></label><span id="usererror"></span>
+				</p>
+				<p> <label for="email">Email: <input type="text" size="25" name="email" id="email"></label><span id="emailerror"></span>
+				</p>
+				<p><label for="mymessage">Message:<br> <textarea cols="50" rows="5" name="message" id="mymessage"></textarea></label><span id="messageerror"></span>
+				</p>
+				<p><input type="submit" value="Contact Us"></p>
+			</form>
+
+		</div>
+
+		<div id="footer">
+			<p>All content &copy; Copyright</p>
+		</div>
+
+	</div>
+	<script>
+		document.getElementById('myform').onsubmit = function() {
+
+			var username = document.getElementById('username');
+			var email = document.getElementById('email');
+			var message = document.getElementById('mymessage');
+			var usererror = document.getElementById('usererror');
+			var emailerror = document.getElementById('emailerror');
+			var messageerror = document.getElementById('messageerror');
+
+			var errors = 0;
+
+			if (username.value == "") {
+				username.style.border = "1px solid red";
+				usererror.innerHTML = " Please enter your name!";
+				errors++;
+			} else {
+				username.style.border = "1px solid blue";
+				usererror.innerHTML = "";
+			}
+
+			if (email.value == "") {
+				email.style.border = "1px solid red";
+				emailerror.innerHTML = " Please enter your email!";
+				errors++;
+			} else {
+				email.style.border = "1px solid blue";
+				emailerror.innerHTML = "";
+			}
+			if (message.value == "") {
+				message.style.border = "1px solid red";
+				messageerror.innerHTML = " Please enter your message!";
+				errors++;
+			} else {
+				message.style.border = "1px solid blue";
+				messageerror.innerHTML = "";
+			}
+			if (errors > 0) {
+				return false;
+			}
+
+		}
+	</script>
+</body>
+
+</html>

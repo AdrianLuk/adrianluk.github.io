@@ -1,0 +1,764 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+}
+
+
+.cf{
+	clear: both;
+}
+
+body{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 16px;
+
+}
+
+a{
+	display: inline-block;
+}
+
+header{
+	position: relative;
+	background-image: url(../img/wood.jpg);
+	width: 100%;
+	height: 550px;
+	background-repeat: no-repeat;
+	background-position: center 0%;
+	background-size: cover;
+
+}
+
+.header a{
+	width: 100%;
+	max-width: 1903px;
+	height: 550px;
+}
+
+.banner img {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	margin-left: -252px;
+	margin-top: 10px;
+}
+
+.main-nav > ul > li{
+	display: inline-block;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.main-nav ul > li> a{
+
+	color: white;
+	padding: 20px;
+	border-radius: 8px;
+	font-weight: bold;
+
+}
+.main-nav ul{
+	padding: 0;
+	margin-bottom: 5px;
+}
+.main-nav > ul{
+	width: 100%;
+
+}
+.main-nav ul > li > ul{
+	position: absolute;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+
+}
+.main-nav ul ul > li > a{
+	padding: 15px 5px;
+	margin-top: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+.main-nav ul ul{
+	display: none;/*change to either none or block to toggle subnav visibility*/
+
+}
+
+
+.main-nav{
+	background: linear-gradient(#55ACCA, #1F8ECD);
+	position: fixed !important;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 69px;
+	z-index: 2;
+	font-size: 1.5em;
+	font-family: Verdana;
+
+}
+
+.main-nav a{
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+}
+
+.main-nav a:hover {
+	color: #1F8ECD;
+	background-color: white;
+}
+
+.main-nav ul > li:hover > ul{
+	display: block;
+
+}
+
+.main-nav ul > li ul > li:hover >a{
+	color: black;
+
+}
+
+.main-nav ul > li:hover > ul>li a{
+	background: linear-gradient(#55ACCA, #1F8ECD);
+}
+
+#contactnav{
+	color: white;
+	background-color: red;
+	border-radius: 0;
+}
+
+#contactnav:hover {
+	opacity: 0.85;
+}
+/*============================Body content======================*/
+h2{
+	font-size: 3em;
+	font-family: 'Ubuntu', Arial, sans-serif;
+	font-weight: bold;
+	padding-top: 10px;
+	color: black;
+
+
+
+}
+
+h3{
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 4em;
+}
+
+h4{
+	font-size: 2em;
+
+}
+
+h5{
+	font-size: 1.5em;
+	font-family: Garamond, Georgia, serif;
+	text-align: center;
+
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+}
+
+button{
+	padding: 10px 20px;
+	font-size: 1.5em;
+	border-radius: 5px;
+	background-color: #1F8ECD;
+	color: white;
+	margin: 15px 0;
+	font-weight: bold;
+}
+
+button:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+a:hover{
+	color: black;
+
+}
+
+.container{
+	text-align: center;
+	margin: auto;
+	background-color: #B8CEDB;
+	padding: 0;
+}
+/*=====================================Mission Statement =================================================*/
+.missionstatement{
+
+	padding: 30px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	background: #FFFF00;
+}
+
+.missionstatement p{
+
+	width: 100%;
+	max-width: 1260px;
+	margin: auto;
+}
+
+/*=======================================Summer Camp ======================================*/
+
+.summercamp{
+	position: relative;
+	height: 400px;
+	padding: 20px;
+	background: #A0E9EF;
+}
+
+
+.summercamp img{
+	position: absolute;
+	top: 50%;
+	margin-top: -150px;
+	left: 5%;
+
+}
+
+.summercamp p{
+	max-width: 720px;
+	font-size: 1.8em;
+	position: absolute;
+	top: 25%;
+	right: 50%;
+	margin-right: -360px;
+}
+
+.summercamp a{
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 2.5em;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	bottom: 5%;
+	text-decoration: none;
+	padding: 30px;
+	background-color: #1F8ECD;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+/*======================================== General Programs =================================================*/
+
+.generalprograms{
+
+	position: relative;
+	height: 366px;
+	padding: 20px;
+	background: white;
+}
+
+.generalprograms img{
+	position: absolute;
+	top: 50%;
+	margin-top: -150px;
+	left: 5%;
+
+}
+
+.generalprograms p{
+
+	max-width: 720px;
+	position: absolute;
+	top: 25%;
+	right: 50%;
+	margin-right: -360px;
+}
+
+.generalprograms nav{
+	width: 100%;
+
+
+}
+.generalprograms nav ul{
+	padding: 0;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -525px;
+}
+
+.generalprograms nav li{
+	display: inline-block;
+}
+
+.generalprograms nav a{
+	text-decoration: none;
+	padding: 40px;
+	background-color: #1F8ECD;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 20px;
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 1.75em;
+}
+
+.generalprograms nav a:hover{
+	color: black;
+}
+
+/*======================================== POP IN PAINT ==========================*/
+
+.popinpaint{
+	background: url(../img/paintbrushes.png);
+	position: relative;
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.popinpaint img{
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	margin-top: -150px;
+}
+
+.popinpaint p{
+	background-color: lemonchiffon;
+	border-radius: 5px;
+	max-width: 720px;
+	font-size: 1.8em;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -360px;
+	color: black;
+	padding: 10px;
+
+}
+
+.popinpaint a{
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 2.5em;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	bottom: 5%;
+	text-decoration: none;
+	padding: 30px;
+	background-color: #1F8ECD;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/*================================================ Creative Scholars=============================*/
+
+.scholars{
+	background-color: #d1d1d1;
+	position: relative;
+	height: 400px;
+}
+
+.scholars img{
+	position: absolute;
+	left: 1%;
+	top: 50%;
+	margin-top: -150px;
+}
+
+.scholars p{
+	max-width: 720px;
+	font-size: 1.8em;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -320px;
+	color: black;
+	padding: 10px;
+}
+
+.scholars a{
+	font-family: Ubuntu, Arial, sans-serif;
+	font-size: 2.5em;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	bottom: 5%;
+	text-decoration: none;
+	padding: 30px;
+	background-color: #1F8ECD;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/*===================================================SUMMER CAMP PAGE========================================*/
+.summercamppage{
+	position: relative;
+	width: 100%;
+	max-width: 2000px;
+	margin: auto;
+	padding: 20px;
+}
+#summermainheader{
+	padding: 20px;
+	background-color: #FAF37E;
+	color: #1F8ECD;
+}
+
+.campflyers img{
+	margin: 10px 50px;
+}
+
+#campregistration a{
+	padding: 30px;
+	width: 100%;
+	max-width: 500px;
+	margin-top: 20px;
+	font-size: 1.5em;
+	text-decoration: none;
+	background-color: #459D96;
+	color: white;
+	border-radius: 5px;
+}
+
+#campregistration a:hover {
+	opacity: 0.85;
+	background: #2A94CC;
+}
+
+#themeinfo{
+
+	width: 100%;
+	padding: 30px;
+	font-size: 2em;
+}
+
+#themeinfo a{
+	width: 100%;
+	max-width: 300px;
+	padding: 20px;
+	text-decoration: none;
+	background-color: #459D96;
+	border-radius: 5px;
+	color: white;
+	margin: 20px;
+}
+
+#themeinfo a:hover {
+	color: lightgrey;
+	font-weight: bold;
+}
+
+.campinfo{
+	height: 90px;
+	padding: 0;
+}
+
+.campinfo p{
+	font-size: 1.5em;
+	float: left;
+	max-width: 600px;
+	display: inline-block;
+	margin-left: 10%;
+	background-color: lemonchiffon;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.campinfo article{
+	max-width: 66%;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+
+.camphours{
+	font-size: 1.2em;
+	max-width: 100%;
+	width: 450px;
+	margin: auto;
+	text-align: left;
+	padding: 10px;
+	background-color: lemonchiffon;
+	border-radius: 5px;
+}
+
+/*==================================================== Partners Page=============================*/
+
+#partnersheading{
+	font-size: 5em;
+	padding: 50px;
+}
+
+.about h3{
+	font-family: Roboto;
+	font-size: 3.5em;
+	padding: 20px;
+}
+
+.about article{
+    width: 33.3%;
+    float: left;
+    padding: 30px;
+    text-align: center;
+}
+
+.about article img{
+    border-radius: 50%;
+}
+
+.about p{
+	font-family: Georgia, Century, serif;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 50px;
+	line-height: 35px;
+}
+
+/*=================================================Contact Us Page=========================*/
+
+.contact{
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+}
+
+.contact a{
+	text-decoration: none;
+	color: blue;
+}
+
+.contact a:hover {
+	opacity: 0.5;
+}
+
+.contact h2{
+	padding: 20px;
+	padding-bottom: 40px;
+}
+
+iframe{
+	margin: auto;
+}
+
+.contact p{
+	float: left;
+	text-align: left;
+	padding: 30px 30px 30px 0px;
+	display: block;
+}
+
+h6{
+	font-size: 2em;
+	text-align: right;
+	margin-bottom: 23px;
+}
+
+#hoursofoperation ul{
+
+	padding: 10px;
+}
+
+#hoursofoperation li{
+	width: 100%;
+	max-width: 960px;
+
+	display: block;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.hours{
+	padding: 30px 0 30px 30px;
+	max-height: 100%;
+	height: 321px;
+}
+
+.form-group{
+	width: 100%;
+	min-width: 960px;
+	padding: 10px 0;
+	margin: auto;
+	display: inline-block;
+	color: white;
+}
+
+#firstnameinput{
+	float: left;
+	font-size: 1.5em;
+}
+#firstname{
+	font-size: 1em;
+}
+
+#lastnameinput{
+	font-size: 1.5em;
+	text-align: right;
+}
+
+#lastname{
+	font-size: 1em;
+
+}
+
+#emailinput{
+	display: inline-block;
+	float: left;
+	font-size: 1.5em;
+	max-width: 100%;
+	padding: 20px 0;
+}
+
+#email{
+	font-size: 1em;
+	max-width: 100%;
+	width: 886px;
+}
+
+#subjectinput{
+	display: inline-block;
+	float: left;
+	font-size: 1.5em;
+	max-width: 100%;
+	padding: 0 0 10px 0;
+}
+
+#subject{
+	font-size: 1em;
+	max-width: 100%;
+	width: 866px;
+}
+
+#messageinput{
+	display: inline-block;
+	float: left;
+	text-align: left;
+	font-size: 1.5em;
+	max-width: 100%;
+	padding: 15px 0 10px 0;
+}
+
+#message{
+	font-size: 1em;
+	width: 100%;
+	min-width: 960px;
+	max-width: 960px;
+	column-count: auto;
+
+}
+
+.forms{
+	width: 100%;
+	max-width: 960px;
+	text-align: center;
+	margin: auto;
+	background-color: #B8CEDB;
+	background: #56ACCA;
+}
+
+.allforms{
+	max-width: 1920px;
+	width: 100%;
+	background-color: #56ACCA;
+	padding-top: 20px;
+}
+
+/*===============================================Design Considerations============*/
+
+.points h3{
+	text-align: center;
+}
+
+.points ul{
+	list-style-type: circle;
+	padding-left: 30px;
+}
+
+.points{
+	text-align: justify;
+}
+
+.points article{
+	width: 100%;
+	max-width: 1500px;
+	padding: 20px;
+	margin: auto;
+}
+/*================== Social Media Bar=============================*/
+
+.follow, .follow nav li{
+	display: inline-block;
+	background-color: crimson;
+}
+
+.follow{
+
+	color: white;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+}
+
+.follow p{
+	font-size: 2em;
+	margin: 10px 10px 0px 10px;
+}
+.follow ul{
+	padding: 0;
+}
+.follow a{
+	padding: 20px 30px 10px 30px;
+}
+
+.follow img{
+	border-radius: 10px;
+	box-shadow: 1px 1px 9px grey;
+}
+
+.follow a:hover {
+	opacity: 0.8;
+}
+#designconsiderations{
+	background: #00529B;
+	padding: 20px;
+}
+
+footer{
+	background: #1F1F1F;
+	font-size: 1.5em;
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	padding: 10px;
+}
+
+footer a{
+	color: lightblue;
+}
+
+.considerations a{
+	color: yellow;
+}
+
+.considerations h2, .considerations h3{
+	color: white;
+}
+
+.points{
+	color: white;
+	font-size: 1.3em;
+}

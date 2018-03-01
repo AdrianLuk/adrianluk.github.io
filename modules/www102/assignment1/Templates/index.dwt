@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Arc Education Centre</title>
+<!-- TemplateEndEditable -->
+<meta name="author" content="Adrian">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+
+
+<!-- TemplateBeginEditable name="head" -->
+<meta name="description" content="Arc Education Centre is an innovative and inclusive place of belonging for learning. We provide an array of resources and classes to fit student needs and demands as we cater to their interests and passion. Our goal is to build bridges as pathways in each student’s journey of education.">
+</head>
+<!-- TemplateEndEditable -->
+
+<body>
+<!-- #BeginLibraryItem "/Library/header-banner.lbi" -->
+<div class="banner"> <a href="../index.html">
+  <header><a href="../index.html">
+    <h1><img src="../img/logo.png" width="504" height="439" alt="Arc education logo"/></h1></a>
+  </header>
+	  </a>
+  <nav class="main-nav">
+     <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Camps</a>
+        <ul>
+          <li><a href="summercamp.html">Summer Camp</a></li>
+          <li><a href="#">March Break Camp</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a>
+        <ul>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="#">Our Teachers</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Testimonies</a></li>
+        </ul>
+      </li>
+      <li><a id="contactnav" href="contact.html">Contact Us</a></li>
+      <li><a href="design_considerations.html">Design Considerations</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- end .banner -->
+<!-- #EndLibraryItem -->
+<!-- TemplateBeginEditable name="body" -->
+
+
+
+<!-- TemplateEndEditable -->
+<!-- #BeginLibraryItem "/Library/social-media.lbi" -->
+<div class="follow">
+  <p>Follow us on Social Media</p>
+  <nav>
+    <li><a href="https://www.facebook.com/arceducationcentre/"><img src="../img/fb.png" width="50" height="50" alt="Facebook logo"></a></li>
+    <li><a href="https://www.instagram.com/arc_education/"><img src="../img/instagram.png" width="50" height="50" alt="Instagram logo"></a></li>
+    <li><a href="https://twitter.com/Arc_Education"><img src="../img/tw.png" width="50" height="50" alt="Twitter logo"></a></li>
+  </nav>
+</div>
+<!-- end .follow -->
+<!-- #EndLibraryItem -->
+<footer>
+	<address>ARC EDUCATION CENTRE<br> 9011 LESLIE STREET, RICHMOND HILL, ON, CANADA L4B 3B6<br>(647) 691-7843<br><a href="mailto:ARCEDUCATIONCENTRE@GMAIL.COM">ARCEDUCATIONCENTRE@GMAIL.COM</a></address>
+</footer>
+</body>
+</html>
+

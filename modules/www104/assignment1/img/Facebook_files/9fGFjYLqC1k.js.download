@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["EtQIn"]); }
+
+__d("P2PChannelType",[],(function a(b,c,d,e,f,g){f.exports={CREDIT_CARD_CHANGED:"P2P\/CreditCardChanged",CREDIT_CARD_DELETED:"P2P\/CreditCardDeleted",TRANSFER_STATUS_CHANGED:"P2P\/TransferStatusChanged",PLATFORM_CONTEXT_NEW:"P2P\/PlatformContextNew",PLATFORM_CONTEXT_DISMISSED:"P2P\/PlatformContextDismissed",PLATFORM_CONTEXT_ELIGIBLE_ITEM_UPDATED:"P2P\/PlatformContextEligibleItemUpdated",PAYMENT_REQUEST_STATUS_CHANGED:"P2P\/PaymentRequestStateChanged"};}),null);

@@ -1,0 +1,139 @@
+
+body {
+  padding-top: 330px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.sticky-shrinknav-menu {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+margin-bottom: 0;
+  line-height: 60px;
+  width: 100%;
+  background-color: #1779ba;
+  transition: all 0.5s ease;
+  padding: 0;
+z-index: 2;
+}
+
+.sticky-shrinknav-menu li {
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  list-style: none;
+  display: inline-flex;
+
+}
+
+.sticky-shrinknav-menu li a:hover {
+  box-shadow: 0 0 0 1px #fefefe;
+  border: 1px solid #1779ba;
+
+  background: #fff;
+  color: #1779ba;
+
+}
+
+.sticky-shrinknav-menu a {
+  color: #fff;
+  text-decoration: none;
+padding: 0 20px;
+font-weight: bold;
+font-size: 1.5rem;
+
+}
+
+.sticky-shrinknav-header-title {
+  transition: all 0.3s ease;
+  position: relative;
+  -webkit-transform: translateY(-1.875rem);
+      -ms-transform: translateY(-1.875rem);
+          transform: translateY(-1.875rem);
+padding: 20px;
+background: #f7f7f7;
+  color: #000;
+  font-family: 'Ubuntu', sans-serif;
+font-weight: bold;
+  font-size: 4rem;
+
+}
+
+.sticky-shrinknav-header {
+  width: 100%;
+  height: 300px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2196e3;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+ background: url(../img/cms.png) no-repeat center;
+ background-size: cover;
+
+}
+
+body.sticky-shrinknav-wrapper {
+  padding-top: 200px;
+
+}
+
+body.sticky-shrinknav-wrapper .sticky-shrinknav-header {
+  height: 3.75rem;
+  background-color: rgba(23, 121, 186, 0.9);
+
+
+}
+
+body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-title {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.anchor{
+    display: block;
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+a.active{
+border: 1px solid #1779ba;
+    color: #1779ba;
+    background: #fff;
+}
+
+tr:nth-child(even){
+    background: #128ee7;
+    color: #000;
+}
+
+thead{
+    background:#fff;
+}
+
+th{
+    font-size: 1.5rem;
+}

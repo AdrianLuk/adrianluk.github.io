@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>RadicalPhoto Contact</title>
+	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
+</head>
+
+<body>
+
+	<div id="header">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a>
+		</ul>
+
+		<h1>RadicalPhoto</h1>
+
+	</div>
+
+	<div id="main_wrapper">
+
+		<div id="content">
+			<h2>Contact RadicalPhoto</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+			<form id="myform" action="http://derekallard.com/echo.php" method="post">
+
+				<p class="errors">All fields are required.</p>
+
+				<p><label for="username">Name: <input type="text" size="25" name="name" id="username" ><span id="usererror"></span></label>
+				</p>
+				<p> <label for="email">Email: <input type="text" size="25" name="email" id="email"><span id="emailerror"></span></label>
+				</p>
+				<p><label for="mymessage">Message:<br> <textarea cols="50" rows="5" name="message" id="mymessage"></textarea><span id="messageerror"></span></label>
+				</p>
+				<p><input type="submit" value="Contact Us"></p>
+			</form>
+
+		</div>
+
+		<div id="footer">
+			<p>All content &copy; Copyright</p>
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		var username = $('#username');
+		var email = $('#email');
+		var message = $('#mymessage');
+		// var inputerror = $('.inputerror');
+		var usererror = $('#usererror');
+		var emailerror = $('#emailerror');
+		var messageerror = $('#messageerror');
+
+		var errors = 0;
+		$('#myform').submit(function(event) {
+			if (username.val() == '') {
+				username.css('border', '1px solid red');
+				usererror.html(' Please enter your name!');
+				errors++;
+				event.preventDefault();
+			} else {
+				username.css('border', '1px solid blue');
+				usererror.html('');
+			}
+			if (email.val() == '') {
+				email.css('border', '1px solid red');
+				emailerror.html(' Please enter your email!');
+				errors++;
+				event.preventDefault();
+			} else {
+				email.css('border', '1px solid blue');
+				emailerror.html('');
+			}
+			if (message.val() == '') {
+				message.css('border', '1px solid red');
+				messageerror.html(' Please enter your message!');
+				errors++;
+				event.preventDefault();
+			} else {
+				message.css('border', '1px solid blue');
+				messageerror.html('');
+			}
+			if (errors = 0) {
+				return true;
+			}
+		});
+		//
+		// function isInvalid(inputField) {
+		// 	if (inputField.val() == '') {
+		//
+		// 		inputField.css({
+		// 			'border': '1px solid red',
+		// 			// 'placeholder': 'Cannot be empty!'
+		// 		});
+		// 		inputerror.html('Cannot be empty!');
+		//
+		// 		return true;
+		//
+		// 	} else {
+		//
+		// 		inputField.css({
+		// 			'border': '1px solid blue'
+		// 		});
+		// 		inputerror.html('');
+		// 	}
+		// }
+		//
+		// var errors = 0;
+		// $('#myform').submit(function(event) {
+		//
+		// 	console.log(username.val());
+		// 	console.log(email.val());
+		// 	console.log(message.val());
+		//
+		//
+		//
+		// 	if (isInvalid(username)) {
+		// 		errors++;
+		//
+		// 		event.preventDefault();
+		// 	}
+		// 	if (isInvalid(email)) {
+		// 		errors++;
+		// 		event.preventDefault();
+		// 	}
+		// 	if (isInvalid(message)) {
+		// 		errors++;
+		// 		event.preventDefault();
+		// 	}
+		// 	if (errors == 0) {
+		// 		return true;
+		// 	}
+		//
+		// 	console.log(errors);
+		// });
+	</script>
+</body>
+
+</html>

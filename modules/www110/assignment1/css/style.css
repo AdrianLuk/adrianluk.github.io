@@ -1,0 +1,32 @@
+body {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	color: #222;
+	margin: 0px auto 50px;
+	padding: 20px 0 100px;
+
+}
+
+input[type="text"]{
+
+	width: 300px;
+}
+
+h1, h2, h5, h6 {
+	color: #000;
+	font-family: 'Lobster', cursive;
+	font-style: italic;
+	font-weight: normal;
+	padding: 15px;
+	font-size: 3.5rem;
+}
+
+label[for="name"]{
+
+}
+
+label[for="alien"]{
+	color: purple;
+}
+label[for="robot"]{
+	color: #555;
+}

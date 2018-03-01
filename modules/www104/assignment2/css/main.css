@@ -1,0 +1,98 @@
+body{
+    font-size: 2.5em;
+    background: url(../img/numbers.jpg);
+    background-size: cover;
+
+}
+
+#canvas{
+    display: block;
+    margin: 30px auto;
+border: 1px solid #ccc;
+box-shadow: 3px 3px 10px #333;
+font-family: 'Iceland';
+max-height: 400px;
+}
+
+#piechart{
+        display: block;
+        margin:30px auto;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 10px #333;
+    max-height: 400px;
+    max-width: 720px;
+
+}
+canvas{
+    border-radius: 10px;
+}
+
+.jumbotron h1{
+    font-size:3em;
+}
+h2{
+    font-family: 'Audiowide';
+
+    font-size: 2em;
+    color: #fff;
+}
+
+h3{
+    font-family: 'Audiowide';
+
+    font-size: 1.2em;
+    color: #fff;
+}
+.jumbotron{
+    background: url(../img/matrix.jpg);
+    background-size: cover;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Audiowide',cursive;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+p{
+    font-family: 'Audiowide', cursive;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#correct, #incorrect{
+    font-family: "Bubblegum Sans", cursive;
+
+}
+
+#correct{
+    font-size: 1.3em;
+
+    color: #07ef07;
+    padding: 5px;
+    background: #020015;
+}
+
+#incorrect{
+    font-size: 1.3em;
+    padding: 5px;
+    color: red;
+    background: #020015;
+}
+
+/*#timer{
+display: hidden;
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+    font-size: 5em;
+    padding: 30px;
+    background: #07EF07;
+    border-radius:10px;
+}*/
