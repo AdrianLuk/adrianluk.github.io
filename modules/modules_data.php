@@ -1,15 +1,13 @@
 <?php
 
-// splashes 1900 x 680
 
-//images or snapshotsmall 700x250
 
 
 $works = [
     [
         'title' => 'PlayLine',
         'url' => 'www.playline.com',
-        'description' => 'Website for a daily fantasy sports company where I was an intern.'
+        'description' => 'Daily fantasy sports company where I interned.'
     ],
     [
         'title' => 'Able2learn',
@@ -24,8 +22,25 @@ $works = [
 ];
 
 // =================  PERSONAL PROJECTS ======================//
+// splashes 1900 x 680
+
+//images or snapshotsmall 700x250
 
 $projects = [
+    [
+        'title' => 'Overwatch League App with React',
+        'image' => 'images/overwatchleaguesnapshotsmall.jpg',
+        'splash' => 'images/overwatchleaguesnapshot.jpg',
+        'url' => 'overwatchleague'
+
+    ],
+    [
+        'title' => 'Laravel Share Purchase System with Auth',
+        'image' => 'images/adriancoinsnapshotsmall.jpg',
+        'splash' => 'images/adriancoinsnapshot.jpg',
+        'url' => 'http://adriancoin.adrianluk.com'
+
+    ],
     [
         'title' => 'Overwatch App',
         'image' => 'images/electronappsnapshotsmall.jpg',
