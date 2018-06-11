@@ -1,4 +1,4 @@
-<div id="homepage" class="animated fadeIn">
+<a id="homepage" class="animated fadeIn">
     <article class="content-container">
         <div class="container">
             <div class="intro">
@@ -98,9 +98,9 @@
         </div>
     </section>
     <section class="content-container" id="work-experience">
-        <div class="container">
+        <a class="container">
             <h2><i class="fa fa-wrench"></i> Work Experience</h2>
-            <div class="work">
+            <article class="work">
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <h5>Teaching Assistant - Webmaster Program</h5>
@@ -109,7 +109,7 @@
                         <h5>Seneca College of Applied Arts and Technology</h5>
                     </div>
                     <div class="col-xs-12 col-lg-4">
-                        <h5>January 2018 - Present</h5>
+                        <h5>January 2018 - April 2018</h5>
                     </div>
                 </div>
                 <ul>
@@ -118,8 +118,8 @@
                     <li>Assist students with code and offer feedback</li>
                     <li>Guide students throughout their web development training</li>
                 </ul>
-            </div>
-            <div class="work">
+            </article>
+            <article class="work">
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <h5>Front End Developer (Intern)</h5>
@@ -135,8 +135,8 @@
                     <li>Develop and code features for the front end of the web application</li>
                     <li>Test and debug code before deployment to production servers</li>
                 </ul>
-            </div>
-            <div class="work">
+            </article>
+            <article class="work">
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <h5>Ski Instructor</h5>
@@ -156,8 +156,8 @@
                     <li>Record content of class after completion of each lesson and document progress of each student</li>
                     <li>Communicate with parents on child's ski progression and answer any related questions</li>
                 </ul>
-            </div>
-            <div class="work">
+            </article>
+            <article class="work">
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <h5>Deputy Returning Officer</h5>
@@ -174,8 +174,8 @@
                     <li>Ensured that the poll clerk and candidates' representatives followed the rules and procedures</li>
                     <li>Counted the ballots, completed related forms and informed the local Elections Canada office of the results</li>
                 </ul>
-            </div>
-            <div class="work">
+            </article>
+            <article class="work">
                 <div class="row">
                     <div class="col-xs-12 col-lg-4">
                         <h5>Umpire</h5>
@@ -192,47 +192,51 @@
                     <li>Ensured that the game was being played safely and in a timely manner</li>
                     <li>Resolved any conflicts or confusion between teams</li>
                 </ul>
-            </div>
+            </article>
         </div>
     </section>
     <section class="content-container" id="volunteer-experience">
         <div class="container">
             <h2><i class="fa fa-heart"></i> Volunteer Experience</h2>
-            <div class="row">
-                <div class="col-xs-12 col-lg-4">
-                    <h5>Wellness Club Volunteer</h5>
+            <article>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-4">
+                        <h5>Wellness Club Volunteer</h5>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <h5>Carefirst Seniors &amp; Community Services Association <br> Toronto, Ontario</h5>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <h5>February 2016 - Present</h5>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-lg-4">
-                    <h5>Carefirst Seniors &amp; Community Services Association <br> Toronto, Ontario</h5>
+                <ul>
+                    <li>Front office administrative tasks in the Wellness Club office</li>
+                    <li>Responsible for accurate entry of client information into CIMS (client information management system) database</li>
+                    <li>Prepare income/expenditure reports for cash and credit card sales and submitting a fee deposit summary</li>
+                    <li>Update registration records regularly and accurately</li>
+                    <li>Setup and clean-up of classes and events</li>
+                    <li>Count and record statistics at the end of each month</li>
+                    <li>Filed, scanned, renamed, and properly sorted financial documents for the Finance Department</li>
+                </ul>
+            </article>
+            <article>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-4">
+                        <h5>Volunteer</h5>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <h5>Friends of the CNE (Canadian National Exhibition) <br> Toronto, Ontario</h5>
+                    </div>
+                    <div class="col-xs-12 col-lg-4">
+                        <h5>June 2009 - August 2009</h5>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-lg-4">
-                    <h5>February 2016 - Present</h5>
-                </div>
-            </div>
-            <ul>
-                <li>Front office administrative tasks in the Wellness Club office</li>
-                <li>Responsible for accurate entry of client information into CIMS (client information management system) database</li>
-                <li>Prepare income/expenditure reports for cash and credit card sales and submitting a fee deposit summary</li>
-                <li>Update registration records regularly and accurately</li>
-                <li>Setup and clean-up of classes and events</li>
-                <li>Count and record statistics at the end of each month</li>
-                <li>Filed, scanned, renamed, and properly sorted financial documents for the Finance Department</li>
-            </ul>
-            <div class="row">
-                <div class="col-xs-12 col-lg-4">
-                    <h5>Volunteer</h5>
-                </div>
-                <div class="col-xs-12 col-lg-4">
-                    <h5>Friends of the CNE (Canadian National Exhibition) <br> Toronto, Ontario</h5>
-                </div>
-                <div class="col-xs-12 col-lg-4">
-                    <h5>June 2009 - August 2009</h5>
-                </div>
-            </div>
-            <ul>
-                <li>Handed out pamphlets with the day's events to all visitors as they entered</li>
-                <li>Ensured all guests were welcomed and knew where they wanted to go</li>
-            </ul>
+                <ul>
+                    <li>Handed out pamphlets with the day's events to all visitors as they entered</li>
+                    <li>Ensured all guests were welcomed and knew where they wanted to go</li>
+                </ul>
+            </article>
         </div>
     </section>
 </div>
