@@ -1,4 +1,4 @@
-<a id="homepage" class="animated fadeIn">
+<div id="homepage" class="animated fadeIn">
     <article class="content-container">
         <div class="container">
             <div class="intro">
@@ -63,42 +63,42 @@
         <div class="container">
             <h2><i class="fa fa-graduation-cap"></i> Education</h2>
             <article class="row program">
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>Certificate - Webmaster Program</h5>
-                        </div>
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>Seneca College of Applied Arts and Technology</h5>
-                        </div>
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>May 2017 - August 2017</h5>
-                        </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>Certificate - Webmaster Program</h5>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>Seneca College of Applied Arts and Technology</h5>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>May 2017 - August 2017</h5>
+                </div>
             </article>
             <article class="row program">
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>Computer Engineering Technology &amp; Marketing</h5>
-                        </div>
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>Seneca College of Applied Arts and Technology</h5>
-                        </div>
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>September 2014 - December 2016</h5>
-                        </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>Computer Engineering Technology &amp; Marketing</h5>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>Seneca College of Applied Arts and Technology</h5>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>September 2014 - December 2016</h5>
+                </div>
             </article>
             <article class="row program">
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>Electrical Engineering</h5>
-                        </div>
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>University of Ottawa</h5>
-                        </div>
-                        <div class="col-xs-12 col-lg-4">
-                            <h5>September 2012 - April 2014</h5>
-                        </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>Electrical Engineering</h5>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>University of Ottawa</h5>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <h5>September 2012 - April 2014</h5>
+                </div>
             </article>
         </div>
     </section>
     <section class="content-container" id="work-experience">
-        <a class="container">
+        <div class="container">
             <h2><i class="fa fa-wrench"></i> Work Experience</h2>
             <article class="work">
                 <div class="row">
@@ -109,7 +109,7 @@
                         <h5>Seneca College of Applied Arts and Technology</h5>
                     </div>
                     <div class="col-xs-12 col-lg-4">
-                        <h5>January 2018 - April 2018</h5>
+                        <h5>January 2018 - Present</h5>
                     </div>
                 </div>
                 <ul>
