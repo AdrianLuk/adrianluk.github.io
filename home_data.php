@@ -71,7 +71,7 @@ $jobs = [
             'Ensured that the game was being played safely and in a timely manner',
             'Resolved any conflicts or confusion between teams'
         ]
-    ],
+    ]
 ];
 
 
