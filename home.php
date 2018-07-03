@@ -64,7 +64,7 @@
         <div class="container">
             <h2><i class="fa fa-graduation-cap"></i> Education</h2>            
             <?php foreach($educations as $education) :?>
-            <article class="row program">
+            <article class="row program align-items-center">
                 <div class="col-xs-12 col-lg-4">
                     <h5><?= $education['program']; ?></h5>
                 </div>
@@ -81,99 +81,26 @@
     <section class="content-container" id="work-experience">
         <div class="container">
             <h2><i class="fa fa-wrench"></i> Work Experience</h2>
-            <article class="work">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>Teaching Assistant - Webmaster Program</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>Seneca College of Applied Arts and Technology</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>January 2018 - Present</h5>
-                    </div>
-                </div>
-                <ul>
-                    <li>Support students during lab period and answer any course related questions</li>
-                    <li>Reinforce lessons presented by teachers by reviewing material with students</li>                  
-                    <li>Assist students with code and offer feedback</li>
-                    <li>Guide students throughout their web development training</li>
-                </ul>
-            </article>
-            <article class="work">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>Front End Developer (Intern)</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>PlayLine Inc.</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>December 2017 - February 2018</h5>
-                    </div>
-                </div>
-                <ul>
-                    <li>Develop and code features for the front end of the web application</li>
-                    <li>Test and debug code before deployment to production servers</li>
-                </ul>
-            </article>
-            <article class="work">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>Ski Instructor</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>Uplands Ski Centre <br> Thornhill, Ontario</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>December 2010 - Present</h5>
-                    </div>
-                </div>
-                <ul>
-                    <li>Responsible for the safety of all students in the lesson ranging from ages 3 - adult</li>
-                    <li>Instruct students how to ski in accordance with Uplands and CSIA standards and practices</li>
-                    <li>Ensure that all students, regardless of age, are enjoying the lesson</li>
-                    <li>Teach all students how to correctly and safely ride the chairlift</li>
-                    <li>Record content of class after completion of each lesson and document progress of each student</li>
-                    <li>Communicate with parents on child's ski progression and answer any related questions</li>
-                </ul>
-            </article>
-            <article class="work">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>Deputy Returning Officer</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>Elections Canada</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>October 2015</h5>
-                    </div>
-                </div>
-                <ul>
-                    <li>Processed voters and ensured proper identification and verification protocols were followed</li>
-                    <li>Ensured that the poll clerk and candidates' representatives followed the rules and procedures</li>
-                    <li>Counted the ballots, completed related forms and informed the local Elections Canada office of the results</li>
-                </ul>
-            </article>
-            <article class="work">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>Umpire</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>North York Baseball Association</h5>
-                    </div>
-                    <div class="col-xs-12 col-lg-4">
-                        <h5>2008 - 2010</h5>
-                    </div>
-                </div>
-                <ul>
-                    <li>Enforced the rules of baseball while ensuring everyone was having fun</li>
-                    <li>Ensured that the game was being played safely and in a timely manner</li>
-                    <li>Resolved any conflicts or confusion between teams</li>
-                </ul>
-            </article>
+            <?php foreach($jobs as $job) : ?>
+    <article class="work">
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-lg-4">
+                <h5><?= $job['position']; ?></h5>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+                <h5><?= $job['company']; ?></h5>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+                <h5><?= $job['timeframe']; ?></h5>
+            </div>
+        </div>
+        <ul>
+            <?php foreach($job['responsibilities'] as $responsibility) :?>
+                <li><?= $responsibility; ?></li>
+            <?php endforeach ?>
+        </ul>
+    </article>
+<?php endforeach ?>
         </div>
     </section>
     <section class="content-container" id="volunteer-experience">
